@@ -369,7 +369,8 @@ header * {
   color: #383848;
 }
 
-#contact .contact-contect .contact-info p {
+#contact .contact-contect .contact-info p,
+#contact .contact-contect .contact-info div p a {
   color: #9a9a9a;
 }
 
@@ -378,7 +379,7 @@ header * {
   margin-right: 5px;
 }
 
-#contact .contact-contect .contact-info a i {
+#contact .contact-contect .contact-info a i{
   color: #fff;
   background-color: #383848;
   padding: 15px;
