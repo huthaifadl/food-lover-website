@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
 }
@@ -139,16 +143,21 @@ header * {
   margin-bottom: 4rem;
 }
 
-#about h2, #offers h2, #menu h2 {
+#about h2,
+#offers h2,
+#menu h2,
+#gallery h2 {
   font-size: 40px;
   margin-bottom: 20px;
 }
 
-#about h2, #menu h2 {
-    color: #383848;
+#about h2,
+#menu h2 {
+  color: #383848;
 }
 
-#about .title p, #menu .title p {
+#about .title p,
+#menu .title p {
   font-size: 14px;
   color: #9a9a9a;
   font-weight: 600;
@@ -181,12 +190,12 @@ header * {
 }
 
 #offers h2 {
-    color: #e4b95b;
+  color: #e4b95b;
 }
 
 #offers .title .p {
-    color: #fff;
-    font-weight: 500;
+  color: #fff;
+  font-weight: 500;
 }
 
 #offers .offers-items {
@@ -202,75 +211,222 @@ header * {
 }
 
 #offers .offers-items h3 {
-    font-size: 25px;
-    margin: 15px 0;
+  font-size: 25px;
+  margin: 15px 0;
 }
 
 #offers .offers-items p {
-    font-size: 14px;
-    padding: 0 20px;
-    font-weight: 300;
-    margin-bottom: 15px;
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
 }
 
 #offers .offers-items span {
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 5px;
 }
 /* End Offers Section */
 
-
 /* Start Menu Section */
 #menu {
-    background-color: #f4f4f4;
-    padding: 5rem 0;
+  background-color: #f4f4f4;
+  padding: 5rem 0;
 }
 
 #menu .menu-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu .menu-items .menu-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
 }
 
 #menu .menu-items .menu-item img {
-    width: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
 #menu .menu-items .menu-item h3 {
-    color: #383848;
-    border-bottom: 1px dashed #c2bdbd;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    position: relative;
+  color: #383848;
+  border-bottom: 1px dashed #c2bdbd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 #menu .menu-items .menu-item span {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #menu .btn {
-    display: block;
-    margin: 20px auto 0;
-    background: #e4b95b;
-    color: #fff;
-    cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+  background: #e4b95b;
+  color: #fff;
+  cursor: pointer;
 }
 
 #menu .btn:hover {
-    background: #383848;
-    transition: all 0.3s ease-in-out;
+  background: #383848;
+  transition: all 0.3s ease-in-out;
 }
 /* End Menu Section */
 
+/* Start daytime Section */
+#daytime {
+  background: url("../img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+#daytime .daytime-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40vh;
+}
+
+#daytime .daytime-items h3 {
+  font-size: 32px;
+  margin: 20px 0 10px;
+}
+
+#daytime .daytime-items p {
+  font-weight: 500;
+}
+/* End daytime Section */
+
+/* Start Gallery Section */
+#gallery {
+  background: url("../img/offer-background.jpg") center center/cover no-repeat;
+  padding: 8rem 0 6rem;
+}
+
+#gallery h2 {
+  color: #fff;
+  text-align: center;
+}
+
+#gallery .img-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#gallery .img-gallery img {
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 20px;
+  opacity: 0.8;
+}
+
+#gallery .img-gallery img:hover {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+/* End Gallery Section */
+
+/* Start Contact Section */
+#contact {
+  background: #f4f4f4;
+  padding: 5rem 0;
+}
+
+#contact .container {
+  max-width: 900px;
+}
+
+#contact .contact-contect {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact .contact-contect .contact-info {
+  width: 50%;
+}
+
+#contact .contact-contect .contact-info div {
+  margin: 30px 0;
+  line-height: 1.7;
+}
+
+#contact .contact-contect .contact-info h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #383848;
+}
+
+#contact .contact-contect .contact-info p {
+  color: #9a9a9a;
+}
+
+#contact .contact-contect .contact-info i {
+  color: #e4b95b;
+  margin-right: 5px;
+}
+
+#contact .contact-contect .contact-info a i {
+  color: #fff;
+  background-color: #383848;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+#contact .contact-contect .contact-info a i:hover {
+  background-color: #e4b95b;
+  transition: all 0.3s ease-in-out;
+}
+
+form {
+  width: 50%;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#contact .btn {
+  background: #e4b95b;
+  color: #fff;
+  cursor: pointer;
+}
+
+#contact .btn:hover {
+  background: #383848;
+  transition: all 0.3s ease-in-out;
+}
+/* Finish Contact Section */
+
+/* Start Footer Section */
+#footer {
+  background: #383848;
+  text-align: center;
+  color: #fff;
+  padding: 22px 0;
+  font-size: 14px;
+}
+
+#footer a {
+  color: #fff;
+}
+/* End Footer Section */
